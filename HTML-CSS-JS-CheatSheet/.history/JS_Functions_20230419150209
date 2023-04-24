@@ -1,0 +1,49 @@
+//Every function automaticall get the argument object with arguments
+//We should not be using argument object 
+//We Can use modern JS spread operator
+
+
+function eat1() {
+    console.log(arguments); //{} empty object
+    console.log("I am eating food.")
+}
+
+let eat2 = function() {
+    console.log(arguments); //{} empty object
+    console.log("I am eating food.")
+}
+
+function drink1(drink) {
+    console.log(arguments); //{ '0': 'milk' }
+    console.log("I am drinking: " + drink)
+}
+
+var drink2 = function(drink) {
+    console.log(arguments); //{ '0': 'water' }
+    console.log("I am drinking: " + drink)
+}
+
+function eatDrink1(food, drink) {
+    console.log(arguments); //{ '0': 'cheese', '1': 'wine' }
+    console.log("I am eating: " + food + " and drinking: " + drink)
+}
+
+let eatDrink2 = (food, drink) => {
+    console.log(arguments); //Would not get arguments object in simple form with Arrow functions
+    console.log("I am eating: " + food + " and drinking: " + drink)
+}
+
+// eat1();
+// eat2();
+// drink1("milk");
+// drink2("water");
+eatDrink1("cheese", "wine");
+// eatDrink2("salad", "beer");
+
+
+function eat3(...args) { //args recieved as an array
+    console.log(args)
+}
+
+eat3(1, 5, 8); //[ 1, 5, 8 ]
+eat3(5, "Hello", true); //[ 5, 'Hello', true ]

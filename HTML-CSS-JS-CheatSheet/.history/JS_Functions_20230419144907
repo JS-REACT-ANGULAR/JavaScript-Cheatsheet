@@ -1,0 +1,37 @@
+function eat1() {
+    console.log(arguments);
+    console.log("I am eating food.")
+}
+
+let eat2 = () => {
+    console.log(arguments);
+    console.log("I am eating food.")
+}
+
+function drink1(drink) {
+    console.log(arguments);
+    console.log("I am drinking: " + drink)
+}
+
+
+var drink2 = function(drink) {
+    console.log(arguments);
+    console.log("I am drinking: " + drink)
+}
+
+function eatDrink1(food, drink) {
+    console.log(arguments);
+    console.log("I am eating: " + food + " and drinking: " + drink)
+}
+
+let eatDrink2 = (food, drink) => {
+    console.log(arguments);
+    console.log("I am eating: " + food + " and drinking: " + drink)
+}
+
+// eat1();
+// eat2();
+// drink1("milk");
+// drink2("water");
+// eatDrink1("cheese", "wine");
+eatDrink2("salad", "beer");

@@ -1,0 +1,3 @@
+//Every function in JS file has it's own EXECUTION CONTEXT
+//Before even that Every JS File starts with GLOBAL execution Context
+//Global Execution Context starts with a global variable WINDOWS and THIS

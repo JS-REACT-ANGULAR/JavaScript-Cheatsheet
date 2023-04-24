@@ -1,0 +1,1 @@
+//this keyword in JavaScript function indicats the object that function belongs to

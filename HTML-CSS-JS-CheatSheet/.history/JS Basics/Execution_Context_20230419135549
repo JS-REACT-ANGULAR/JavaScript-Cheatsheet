@@ -1,0 +1,24 @@
+//Every function in JS file has it's own EXECUTION CONTEXT
+//Before even that Every JS File starts with GLOBAL execution Context
+//Global Execution Context starts with a global variable WINDOWS (GLOBAL with node) and THIS
+//Every Execution context has 2 parts. Creation Phase and Execution Phase
+//Creation Phase is where hoisting happens
+//Execution Phase then runs code.
+
+
+function getMyName() {
+    return "Devesh Kumar";
+}
+
+function findMyName() {
+    return getMyName();
+}
+
+function printMyName() {
+    console.log(findMyName());
+}
+
+printMyName();
+
+//In the example above 5 execution context are created
+//Global

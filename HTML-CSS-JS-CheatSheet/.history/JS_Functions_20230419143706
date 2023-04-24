@@ -1,0 +1,12 @@
+function eat() {
+    console.log(arguments);
+    console.log("I am eating food.")
+}
+
+function drink(drink) {
+    console.log("I am drinking: " + drink)
+}
+
+function drink(food, drink) {
+    console.log("I am eating: " + food + " and drinking: " + drink)
+}

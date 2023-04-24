@@ -1,0 +1,1 @@
+//Given below are IIFE Syntaxes
