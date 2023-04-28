@@ -1,3 +1,6 @@
+//1 - Memory Efficient
+
+//In the example below, every time we use heavyDuty1(). A new Array is created and destroyed. Bad for Memory
 function heavyDuty1(index) {
     const bigArray = new Array(7000).fill("Hi");
     console.log("Created");
@@ -9,6 +12,7 @@ heavyDuty1(200); //Array is created and destryed
 heavyDuty1(300); //Array is created and destryed
 
 
+//While in case of heavyDuty2(), array is created only once with heavyDuty2() call. All because of Closure
 function heavyDuty2() {
     const bigArray = new Array(7000).fill("Hi");
     console.log("Created");
@@ -21,3 +25,5 @@ const getHeavyDuty2 = heavyDuty2(); ////Array is created only once here
 getHeavyDuty2(100); //Already created Array is accessed using closure
 getHeavyDuty2(200); //Already created Array is accessed using closure
 getHeavyDuty2(300); //Already created Array is accessed using closure
+
+//2 - Encapsulation

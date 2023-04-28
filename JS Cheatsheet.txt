@@ -1,1 +1,2 @@
-Lexical scoping refers to when the location of a function's definition determines which variables you have access to. On the other hand, dynamic scoping uses the location of the function's invocation to determine which variables are available.
+1 - In HTML page, script.js file is kept at bottom so that it allows HTML to load up.
+2 - JS has for, foreach, forin, while, do while loops
