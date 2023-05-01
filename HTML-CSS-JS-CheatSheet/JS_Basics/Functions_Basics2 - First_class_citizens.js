@@ -1,15 +1,3 @@
-//A new way to create functions
-let sum = new Function("return 5+5");
-console.log(sum()); //Output : 10
-
-//functions are objects in JS as They can have properties
-sum.lol = "hahaha";
-console.log(sum.lol); //hahaha
-
-//functions have name property
-function myfunc() {}
-console.log(myfunc.name); //myfunc
-
 //FUNCTIONS ARE FIRST CLASS CITIZENS
 
 // 1 - As functions can be assigned to variables

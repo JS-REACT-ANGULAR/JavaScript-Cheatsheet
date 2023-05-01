@@ -21,13 +21,13 @@
 let person = {
 
     name: "Devesh",
-    eat() {
+    eat() { // Since eat() is being called by person object. this === person
         console.log("Devesh eats", this)
 
         function drink() {
             console.log("Devesh drinks", this);
         }
-        drink();
+        drink(); //Since drink is not being called by any object. this === global
     }
 
 }

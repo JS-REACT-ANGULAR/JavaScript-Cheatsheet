@@ -1,3 +1,9 @@
+//A higher-order function is a function that can accept functions as parameters and/or returns a function;
+//This is Awesome for a number of reasons like code reusability and creating multiple flavours of functions.
+
+
+//1 - HOF returning another function
+
 function letEmployeeLogin(empName) {
     return function() {
         console.log("Access granted to: " + empName);
@@ -11,7 +17,7 @@ let adamLogin = letEmployeeLogin("Adam");
 adamLogin();
 
 
-//-----------------
+//-----------------Function Currying--------
 
 const multiplyBy = (num1) => {
     return function(num2) {

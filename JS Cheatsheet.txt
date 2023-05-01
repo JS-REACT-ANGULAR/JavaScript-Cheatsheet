@@ -1,2 +1,7 @@
 1 - In HTML page, script.js file is kept at bottom so that it allows HTML to load up.
 2 - JS has for, foreach, forin, while, do while loops
+3 - JS Array Important Methods : ForEach (With Side-effects), Map, Filter, Reduce
+4 - Map, Filter and Reduce require things to be returned. 
+5 - Destructuring can be done for both arrays and objects
+6 - Spread Operator for function. All arguments are accepted as array function func1(...nums){}
+
