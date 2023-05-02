@@ -1,0 +1,3 @@
+function letEmployeeLogin(empName) {
+    return
+}

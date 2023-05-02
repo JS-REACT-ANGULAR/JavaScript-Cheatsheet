@@ -1,0 +1,2 @@
+1 - In HTML page, script.js file is kept at bottom so that it allows HTML to load up.
+2 - JS has for, foreach, forin, while, do while loops

@@ -1,0 +1,1 @@
+makePositiveAndMultiplyBy10(-5);
