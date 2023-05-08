@@ -1,0 +1,1 @@
+featch("https://jsonplaceholder.typicode.com/users")

@@ -22,22 +22,7 @@ let promise3 = fetchData("https://jsonplaceholder.typicode.com/users");
 // Promise.all([promise1, promise2, promise3]).then(result => console.log(result));
 
 // Promise.allSettled waits for all promises to settle and returns their results as an array of objects, and they can be individually either resolved or rejected.
-// Promise.allSettled([promise1, promise2, promise3]).then(result => console.log(result));
+Promise.allSettled([promise1, promise2, promise3]).then(result => console.log(result));
 
 //Promise.race – It will return the promise instance which is firstly resolved or rejected.
 // Promise.race([promise1, promise2, promise3]).then(result => console.log(result));
-
-
-// -----------------------Async Await--------------
-let fetchData2 = async(url) => {
-    try {
-        return (await fetch(url)).json();
-    } catch (error) {
-        throw "Welcome to Error";
-    }
-}
-
-
-fetchData2("https://jsonplaceholder.typicode.com/users")
-    .then(response => console.log(response))
-    .catch(error => console.log(error))

@@ -35,6 +35,8 @@ let fetchData2 = async(url) => {
     } catch (error) {
         throw "Welcome to Error";
     }
+
+
 }
 
 

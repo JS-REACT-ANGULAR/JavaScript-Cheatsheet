@@ -30,11 +30,7 @@ let promise3 = fetchData("https://jsonplaceholder.typicode.com/users");
 
 // -----------------------Async Await--------------
 let fetchData2 = async(url) => {
-    try {
-        return (await fetch(url)).json();
-    } catch (error) {
-        throw "Welcome to Error";
-    }
+    return (await fetch(url)).json();
 }
 
 

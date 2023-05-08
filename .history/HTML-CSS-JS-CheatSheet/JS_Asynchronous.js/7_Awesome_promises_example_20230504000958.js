@@ -19,7 +19,7 @@ let promise2 = fetchData("https://jsonplaceholder.typicode.com/users");
 let promise3 = fetchData("https://jsonplaceholder.typicode.com/users");
 
 // Promise.all waits for all promises to resolve and returns an array of their results. If any of the given promises rejects, it becomes the error of Promise.all, and all other results are ignored.
-// Promise.all([promise1, promise2, promise3]).then(result => console.log(result));
+Promise.all([promise1, promise2, promise3]).then(result => console.log(result));
 
 // Promise.allSettled waits for all promises to settle and returns their results as an array of objects, and they can be individually either resolved or rejected.
 // Promise.allSettled([promise1, promise2, promise3]).then(result => console.log(result));
@@ -30,11 +30,7 @@ let promise3 = fetchData("https://jsonplaceholder.typicode.com/users");
 
 // -----------------------Async Await--------------
 let fetchData2 = async(url) => {
-    try {
-        return (await fetch(url)).json();
-    } catch (error) {
-        throw "Welcome to Error";
-    }
+    return (await fetch(url)).json();
 }
 
 

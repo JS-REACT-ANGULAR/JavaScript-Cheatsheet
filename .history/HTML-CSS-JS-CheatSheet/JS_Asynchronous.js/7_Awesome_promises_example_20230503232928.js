@@ -26,18 +26,3 @@ let promise3 = fetchData("https://jsonplaceholder.typicode.com/users");
 
 //Promise.race – It will return the promise instance which is firstly resolved or rejected.
 // Promise.race([promise1, promise2, promise3]).then(result => console.log(result));
-
-
-// -----------------------Async Await--------------
-let fetchData2 = async(url) => {
-    try {
-        return (await fetch(url)).json();
-    } catch (error) {
-        throw "Welcome to Error";
-    }
-}
-
-
-fetchData2("https://jsonplaceholder.typicode.com/users")
-    .then(response => console.log(response))
-    .catch(error => console.log(error))

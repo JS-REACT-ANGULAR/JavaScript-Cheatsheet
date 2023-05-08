@@ -33,8 +33,10 @@ let fetchData2 = async(url) => {
     try {
         return (await fetch(url)).json();
     } catch (error) {
-        throw "Welcome to Error";
+
     }
+
+
 }
 
 
